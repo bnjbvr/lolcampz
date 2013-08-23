@@ -5,6 +5,9 @@ apt-get update
 apt-get dist-upgrade -y
 apt-get install -y build-essential ruby1.9.1-full libxml2 libxml2-dev libxslt1-dev postgresql redis-server nodejs git ruby-bundler libpq-dev
 
+# Virtualbox guest utils, for automatically mounting /vagrant
+apt-get install -y linux-headers-$(uname -r) virtualbox-guest-utils
+
 # make sure to use ruby1.9.1 as ruby
 update-alternatives --set ruby /usr/bin/ruby1.9.1
 
