@@ -15,7 +15,10 @@ Vagrant::Config.run do |config|
 
   config.vm.provision :shell, :path => "bootstrap.sh"
 
-  config.vm.forward_port 8080, 8080
+  # If you want to host several VM
+  config.vm.network :hostonly, "192.168.0.50"
+  # If you want to host a single VM
+  #config.vm.forward_port 8080, 8080
 
   # Boot with a GUI so you can see the screen. (Default is headless)
   # config.vm.boot_mode = :gui
