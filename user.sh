@@ -1,6 +1,6 @@
 #!/bin/bash
 export USERNAME=admin
-export PASSPHRASE=$2a$10$l.uRfCGWqVzXUkXpRA.SnOIhnk6UtlCPo8F3BelIXRdXPp/SQSnhG
+export PASSPHRASE='$2a$10$l.uRfCGWqVzXUkXpRA.SnOIhnk6UtlCPo8F3BelIXRdXPp/SQSnhG'
 
 # if you want to host several VM, use a subnetwork
 export URL=http://192.168.0.50:8080
