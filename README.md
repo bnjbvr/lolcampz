@@ -13,9 +13,11 @@ how to (VM version)
 ===================
 
 - `vagrant up`
+- go prepare yourself a coffee
 - `vagrant -c /vagrant/user.sh`
+- go have another coffee, a longer this time
 - open the URL you've set in user.sh in your browser (Firefox).
-- except if you changed them: username: admin / password: tent
+- unless you changed them: username: admin / password: tent
 - voila!
 
 how to (hosted version)
