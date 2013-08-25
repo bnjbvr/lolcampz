@@ -14,7 +14,7 @@ how to (VM version)
 
 - `vagrant up`
 - go prepare yourself a coffee
-- `vagrant -c /vagrant/user.sh`
+- `vagrant ssh -c /vagrant/user.sh`
 - go have another coffee, a longer this time
 - open the URL you've set in user.sh in your browser (Firefox).
 - unless you changed them: username: admin / password: tent
