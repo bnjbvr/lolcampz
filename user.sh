@@ -1,6 +1,7 @@
 #!/bin/bash
 export USERNAME=admin
 export PASSPHRASE='$2a$10$l.uRfCGWqVzXUkXpRA.SnOIhnk6UtlCPo8F3BelIXRdXPp/SQSnhG'
+export DEBUG=true
 
 # if you want to host several VM, use a subnetwork
 export URL=http://192.168.0.50:8080
@@ -24,5 +25,5 @@ chmod 0600 /home/vagrant/.pgpass
 
 bundle exec rake db:create
 bundle exec rake db:migrate
-bundle exec unicorn -p 8080
+bundle exec ruby ./runner.rb
 
